@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PortalFragment">
+    tools:context=".AddPortalsFragment">
 
     <EditText
         android:id="@+id/etTitle"
@@ -14,8 +14,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="@string/inputTitle"
         android:inputType="text"
-        android:text="@string/inputTitle"
+        android:maxLines="1"
+        android:scrollHorizontally="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,8 +30,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="@string/inputUrl"
         android:inputType="textUri"
-        android:text="@string/inputUrl"
+        android:maxLines="1"
+        android:scrollHorizontally="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTitle" />
