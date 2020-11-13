@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
 
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.madlevel3task2.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_portalFragment"
+            app:destination="@id/portalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/portalFragment"
+        android:name="com.example.madlevel3task2.PortalFragment"
+        android:label="fragment_portal_add"
+        tools:layout="@layout/fragment_portal_add" />
 </navigation>
