@@ -18,5 +18,9 @@
         android:id="@+id/addPortalsFragment"
         android:name="com.example.madlevel3task2.AddPortalsFragment"
         android:label="fragment_add_portals"
-        tools:layout="@layout/fragment_add_portals" />
+        tools:layout="@layout/fragment_add_portals" >
+        <action
+            android:id="@+id/action_addPortalsFragment_to_portalsFragment"
+            app:destination="@id/portalsFragment" />
+    </fragment>
 </navigation>
